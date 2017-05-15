@@ -1,0 +1,59 @@
+
+# SEO settings
+title: "Learning is hard"
+title2: "" # default: ""
+description: "A blog about learning how to learn."
+keywords: "blogs, technology, software development, personal growth"
+url: learningishard.af # site url
+baseurl: null # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+repo: http://github.com/ugotsoul/ugotsoul.github.io
+disqus_shortname: ""
+twitter_username: "_ugotsoul"
+comments: false
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Ugaso"
+  job      : "Software Engineer"
+  bio      : "Something something puppies."
+  thumb    : /images/author.jpg
+  email    : ""
+  url      : http://learningishard.af
+  github   : http://github.com/ugotsoul
+  twitter  : http://twitter.com/_ugotsoul
+  facebook : ""
+  linkedin : ""
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@_ugotsoul"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
