@@ -1,59 +1,35 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# SEO settings
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
 title: "Learning is hard"
 title2: "" # default: ""
 description: "A blog about learning how to learn."
 keywords: "blogs, technology, software development, personal growth"
 url: learningishard.af # site url
 baseurl: null # apply repo name if use it under gh-pages branch
-# baseurl: null # apply null if repo name is something like username.github.io
+# baseurl: null # apply null if repo name is something like
+twitter_username: _ugotsoul
+github_username:  ugotsoul
 
-google_analytics: UA-XXXXX-XX
-repo: http://github.com/ugotsoul/ugotsoul.github.io
-disqus_shortname: ""
-twitter_username: "_ugotsoul"
-comments: false
 
 # Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
-
-source: ./
-destination: ./_site
-
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
-
-# Author settings
-author:
-  name     : "Ugaso"
-  job      : "Software Engineer"
-  bio      : "Something something puppies."
-  thumb    : /images/author.jpg
-  email    : ""
-  url      : http://learningishard.af
-  github   : http://github.com/ugotsoul
-  twitter  : http://twitter.com/_ugotsoul
-  facebook : ""
-  linkedin : ""
-
-# social settings
-og_locale: "en_US"
-twitter_card: "summary_large_image"
-twitter_site: "@_ugotsoul"
-
+markdown: kramdown
+theme: minima
 gems:
-  - bourbon
-  - jekyll-paginate
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
