@@ -1,6 +1,12 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: default
+title: Home
 ---
+
+<h3>I am so smart, I am so smart, S-M-R-T! ... D'oh!</h3>
+{% for post in site.posts %}
+  {{ post.date | date: "%b, %d, %Y" }}
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a>
+{% endfor %}

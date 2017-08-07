@@ -16,7 +16,7 @@
 title: Your awesome title
 title: "Learning is hard"
 title2: "" # default: ""
-description: "A blog about learning how to learn."
+description: "A blog about relearning how to learn."
 keywords: "blogs, technology, software development, personal growth"
 url: learningishard.af # site url
 baseurl: null # apply repo name if use it under gh-pages branch
@@ -27,9 +27,7 @@ github_username:  ugotsoul
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
+theme: jekyll-theme-minimal
 exclude:
   - Gemfile
   - Gemfile.lock
