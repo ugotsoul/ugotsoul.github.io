@@ -13,14 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
 title: "Learning is hard"
-title2: "" # default: ""
 description: "A blog about relearning how to learn."
 keywords: "blogs, technology, software development, personal growth"
 url: learningishard.af # site url
 baseurl: null # apply repo name if use it under gh-pages branch
-# baseurl: null # apply null if repo name is something like
 twitter_username: _ugotsoul
 github_username:  ugotsoul
 
