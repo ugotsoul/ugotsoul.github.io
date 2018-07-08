@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Learning is hard"
-description: "A blog about relearning how to learn."
+title: "Learning is hard AF"
+description: "A blog about re-learning how to learn."
 keywords: "blogs, technology, software development, personal growth"
 url: learningishard.af # site url
 baseurl: null # apply repo name if use it under gh-pages branch
