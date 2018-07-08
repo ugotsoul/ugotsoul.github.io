@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h5>{{ page.date | date: "%B, %d, %Y" }}</h5>
+<h3>{{ page.title }}</h3>
+<hr>
+<div class="post">
+  {{ content }}
+</div>
+
+{% include post_footer.html %}
